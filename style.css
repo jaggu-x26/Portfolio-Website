@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: #080808;
+    background: #FAF2D3;
     color: #fff;
 }
 #header{
@@ -84,6 +84,19 @@ nav ul li a:hover::after{
     padding: 80px 100px;
     color: #ababab;
 }
+
+#about .container{
+    background: rgba( 255, 255, 255, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#about .container h1{
+    color: #3085C3;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -101,6 +114,10 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 60%;
+}
+
+.about-col-2 p{
+    color: #1c669b
 }
 
 .sub-title{
@@ -126,7 +143,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #f266ab;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -138,12 +155,13 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li{
+    color: #1c669b;
     list-style: none;
     margin: 10px 0;
 }
 
 .tab-contents ul li span{
-    color: #ff004f;
+    color: #f266ab;
     margin: 10px 0;
 }
 
@@ -159,6 +177,10 @@ nav ul li a:hover::after{
 /* services */
 #services{
     padding: 50px 100px;
+}
+
+#services .container h1{
+    color: #1D5D9B;
 }
 
 .services-list{
@@ -199,6 +221,10 @@ nav ul li a:hover::after{
 
 #portfolio{
     padding: 50px 100px;
+}
+
+#portfolio .container h1{
+    color: #1D5D9B;
 }
 
 .work-list{
@@ -270,6 +296,7 @@ nav ul li a:hover::after{
 
 #contact{
     padding: 50px 100px;
+    background: #3085C3;
 }
 
 .contact-left{
@@ -284,10 +311,15 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
+.contact-left h1{
+    color: #FAF2D3;
+}
+
 .contact-left p i{
-    color: #ff004f;
+    color: #F266AB;
     margin-right: 15px;
     font-size: 25px;
+    /* border: 1px solid #FAF2D3; */
 }
 
 .social-icons{
@@ -296,23 +328,44 @@ nav ul li a:hover::after{
 
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 50px;
     margin-right: 15px;
-    color: #ababab;
+    color: #FAF2D3;
     display: inline-block;
     transition: transform 0.1s;
 }
 
-.social-icons a:hover{
-    color: #ff004f;
+.social-icons a:hover {
+    color: #0a66c2;
     transform: translateY(-5px);
+}
+
+.social-icons a:hover .fa-linkedin{
+    color: #0a66c2;
+    border: 1px #FAF2D3;
+    text-shadow: 0 0 10px #FAF2D3;
+}
+
+.social-icons a:hover .fa-github{
+    color: #1f2328;
+    border: 1px #FAF2D3;
+    text-shadow: 0 0 10px #FAF2D3;
+}
+
+.social-icons a:hover .fa-square-instagram{
+    background: -webkit-linear-gradient(rgb(79,91,213), rgb(150,47,191), rgb(214,41,118), rgb(250,126,30), rgb(254,218,117));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px #FAF2D3;
+    text-shadow: 0 0 20px #FAF2D3;
 }
 
 .btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 3px inset #FAF2D3;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -321,12 +374,12 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #F266AB;
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #F266AB;
 }
 
 .contact-right form{
@@ -337,7 +390,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #FAF2D3;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -353,7 +406,7 @@ form .btn2{
 }
 
 #msg{
-    color: #61b752;
+    color: #FED1EF;
     margin-top: -30px;
     display: block;
 }
@@ -363,6 +416,11 @@ form .btn2{
 nav .fas{
     display: none;
 }
+
+@media only screen and (max-width: 600px){
+    
+}
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -477,4 +535,18 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
   transition: background-color 5000s;
   -webkit-text-fill-color: #fff !important;
+}
+
+.divider{
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.divider img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
