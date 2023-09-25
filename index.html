@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8953ab0ae7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Jagriti Rai</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------- about ------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic Computer Science student with a passion for Data Analysis and a solid foundation in computer science
+                        principles. Eager to contribute my technical skills and academic knowledge to real-world projects. Proficient in
+                        programming languages such as Python and Java, with experience in data analysis, and software engineering concepts.
+                        Seeking opportunities to leverage my education and skills to create innovative solutions in the field of technology</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span></li>
+                                <li><span style="color: #fff;">Tableau</span></li>
+                                <li><span>Power BI</span></li>
+                                <li><span style="color: #fff;">Machine Learning</span></li>
+                                <li><span>Excel</span></li>
+                                <li><span style="color: #fff;">SQL</span></li>
+                                <li><span >Java</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>MCA from Christ(Deemed to be University), Bangalore</li>
+                                <li><span>2022</span><br>KIIT(Kalinga Institute of Industrial Technology), Odisha</li>
+                                <li><span>2019</span><br>St Mary's School, Uttar Pradesh</li>
+                                <li><span>2017</span><br>St Mary's School, Uttar Pradesh</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ Services ------------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart fa-bounce"></i>
+                    <h2>Data Analysis with Python</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum id facilis hic, sunt placeat deleniti explicabo, exercitationem natus recusandae assumenda sapiente accusamus delectus excepturi!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple fa-bounce"></i>
+                    <h2>Power BI</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum id facilis hic, sunt placeat deleniti explicabo, exercitationem natus recusandae assumenda sapiente accusamus delectus excepturi!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-table-list fa-bounce"></i>
+                    <h2>Tableau</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum id facilis hic, sunt placeat deleniti explicabo, exercitationem natus recusandae assumenda sapiente accusamus delectus excepturi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Janseva-Virtualising Pilgrimage</h3>
+                    <p>The JanSeva platform aims to democratize the search for the divine by
+                        enabling disabled, elderly,and physically unable individuals to reach
+                        pilgrimages. The platform combines the spiritual essence of pilgrimage with the
+                        convenience and accessibility of technology to provide an equal oppurtunity for devotees to worship and recieve blessings
+                        </p>
+                    <a href="https://github.com/jagritirai223/Janseva-DBMSProject.git"><i class="fa-solid fa-link fa-beat" style="color: #ff004f;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Telecom Churn</h3>
+                    <p>With 21 predictor variables we need to predict whether a particular customer will switch to another telecom provider or not. In telecom terminology, this is referred to as churning and not churning, respectively.
+                        </p>
+                    <a href="https://github.com/jagritirai223/Telecom-Churn.git"><i class="fa-solid fa-link fa-beat" style="color: #ff004f;"></i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> jagriti.rai@mca.christuniversity.in</p>
+                <p> <i class="fa-solid fa-phone-square-alt"></i> 9511195836</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/jagriti-rai26"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jagritirai223"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/jaggu_x26/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id=""  rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvoG71ghoNnugbIMuK1nXgVUgwYHKcvDJoYo32MTIWFmtMgpglJanonXnqRHYmPsB2Qw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
